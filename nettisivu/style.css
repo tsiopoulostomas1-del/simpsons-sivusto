@@ -1,0 +1,35 @@
+#logo {
+    width: 200px;
+    
+}
+
+#etusivuheader {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    font-family: calibri;
+
+} 
+
+#etunav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 5px;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+#banner img {
+    width: 400px;
+}
