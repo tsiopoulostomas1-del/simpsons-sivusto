@@ -17,6 +17,7 @@ body {
     padding: 10px;
     border-bottom: 2px solid black;
     font-family: calibri;
+    background-color: #E44423;
 
 } 
 
@@ -29,6 +30,7 @@ body {
     margin-bottom: 5px;
     height: 60px;
     font-size: 22px;
+    background-color: #CDDF8D;
 }
 
 #etunav a {
@@ -77,6 +79,8 @@ body {
     height: 325px;
     bottom: 150px;
     right: 10px;
+    background-color: #5C9ED9;
+    font-family: calibri;
     
 }
 
@@ -96,3 +100,52 @@ body {
 }
 
 /* ---------------------------------------*/
+
+/* springfield */
+
+#springfield {
+    background-color: rgb(0, 0, 0);
+}
+
+#simpsonshome img {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    width: 300px;
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+
+/* lightbox */
+
+.gallery-img {
+    width: 200px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.gallery-img:hover {
+    opacity: 0.7;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+#lightbox.active {
+    display: flex;
+}
+
+#lightbox-img {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 8px;
+}

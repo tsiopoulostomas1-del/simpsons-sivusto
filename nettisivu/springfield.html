@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etusivu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <aside id="etusivuheader">
+        <img id="logo" src="images/thesimpsons.png" alt="The Simpsons">
+        <h1>
+            The Simpsons Page
+        </h1>
+    </aside>
+
+    <nav style="font-family: Calibri; " id="etunav">
+        <a href="hahmosivu.html"><strong>Hahmosivu</strong></a>
+        <a href="keskustelupalsta.html"><strong>Keskustelupalsta</strong></a>
+        <a style="color:white; padding:22px;"  id="springfield" href="springfield.html"><strong>Springfield</strong></a>
+        <a href="etusivu.html"><strong>Takaisin pääsivulle</strong></a>
+    </nav>
+    <div id="banner" >
+      <img src="images/springfield.jpg" alt="Banner"> 
+    </div>
+
+    <main>
+
+        <div id="simpsonshome">
+            <img src="images/simpsons_home.jpg" alt="Simpsons home" onclick="openLightbox(0)">
+        </div>
+
+        <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" src="">
+            <button id="prev-btn" onclick="event.stopPropagation(); changeImage(-1)">&#8592;</button>
+            <button id="next-btn" onclick="event.stopPropagation(); changeImage(1)">&#8594;</button>
+        </div>
+
+    </main>
+
+
+</body>
+</html>
