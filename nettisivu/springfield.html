@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etusivu</title>
+    <title>Springfield</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -27,16 +27,60 @@
     </div>
 
     <main>
+<h2>Simpsons home</h2>
+    <div id="simpsonshome">
+        <img src="images/simpsons_restroom.jpg" onclick="openGallery()" style="cursor:pointer; width:200px;">
+    </div>
+    
 
-        <div id="simpsonshome">
-            <img src="images/simpsons_home.jpg" alt="Simpsons home" onclick="openLightbox(0)">
-        </div>
 
-        <div id="lightbox" onclick="closeLightbox()">
-            <img id="lightbox-img" src="">
-            <button id="prev-btn" onclick="event.stopPropagation(); changeImage(-1)">&#8592;</button>
-            <button id="next-btn" onclick="event.stopPropagation(); changeImage(1)">&#8594;</button>
+    <div id="gallery-popup" onclick="closeGallery()">
+        <div id="gallery-grid" onclick="event.stopPropagation()">
+            <button id="gallery-close" onclick="closeGallery()">✕ Back</button>
+            <img src="images/simpsons_bed1.jpg" onclick="openBigImage(this)">
+            <img src="images/simpsons_kitchen.jpg" onclick="openBigImage(this)">
+            <img src="images/simpsons_home.jpg" onclick="openBigImage(this)">
+            <img src="images/simpsons_hom3.jpg" onclick="openBigImage(this)">
+            <img src="images/restroom2.jpg" onclick="openBigImage(this)">
         </div>
+    </div>
+    
+<h2>Moe's Apartment / house</h2>
+    <div id="simpsonshome2">
+        <img src="images/moesapartment2.jpg" onclick="openGallery2()" style="cursor:pointer; width:200px;">
+    </div>
+    
+
+
+    <div id="gallery-popup2" onclick="closeGallery2()">
+        <div id="gallery-grid2" onclick="event.stopPropagation()">
+            <button id="gallery-close2" onclick="closeGallery2()">✕ Back</button>
+            <img src="images/moesapartment1.png" onclick="openBigImage2(this)">
+            <img src="images/moesapartment3.jpg" onclick="openBigImage2(this)">
+            <img src="images/moesapartment4.jpg" onclick="openBigImage2(this)">
+            <img src="images/moesapartment5.jpg" onclick="openBigImage2(this)">
+            <img src="images/moesapartment6.jpg" onclick="openBigImage2(this)">
+        </div>
+    </div>
+
+<h2>Kwik'e'mart shop center</h2>
+    <div id="simpsonshome3">
+        <img src="images/kwik1.jpg" onclick="openGallery3()" style="cursor:pointer; width:200px;">
+    </div>
+    
+
+
+    <div id="gallery-popup3" onclick="closeGallery3()">
+        <div id="gallery-grid3" onclick="event.stopPropagation()">
+            <button id="gallery-close3" onclick="closeGallery3()">✕ Back</button>
+            <img src="images/kwik2.jpg" onclick="openBigImage3(this)">
+            <img src="images/kwik3.jpg" onclick="openBigImage3(this)">
+            <img src="images/kwik4.jpg" onclick="openBigImage3(this)">
+            <img src="images/kwik5.png" onclick="openBigImage3(this)">
+            <img src="images/kwik6.jpg" onclick="openBigImage3(this)">
+        </div>
+    </div>
+
 
     </main>
 

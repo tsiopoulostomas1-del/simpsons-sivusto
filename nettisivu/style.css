@@ -107,29 +107,13 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-#simpsonshome img {
-    display: flex;
-    align-items: center;
-    border: 2px solid black;
-    width: 300px;
-    position: relative;
-    top: 50px;
-    left: 20px;
+#hahmosivu {
+    background-color: black;
 }
 
-/* lightbox */
+/* 1 */
 
-.gallery-img {
-    width: 200px;
-    cursor: pointer;
-    transition: opacity 0.3s;
-}
-
-.gallery-img:hover {
-    opacity: 0.7;
-}
-
-#lightbox {
+#gallery-popup {
     display: none;
     position: fixed;
     inset: 0;
@@ -140,12 +124,174 @@ body {
     cursor: pointer;
 }
 
-#lightbox.active {
+#gallery-popup.active {
     display: flex;
 }
 
-#lightbox-img {
-    max-width: 90%;
-    max-height: 90vh;
+#gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    max-width: 700px;
+    position: relative;
+    cursor: default;
+}
+
+#gallery-grid img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: opacity 0.2s;
+}
+
+#gallery-grid img:hover {
+    opacity: 0.8;
+}
+
+#gallery-close {
+    grid-column: 1 / -1;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    padding: 8px;
     border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#simpsonshome img {
+    border: 2px solid black;
+    
+}
+
+#simpsonshome {
+    padding: 10px;
+}
+
+
+/* 2 */
+
+#gallery-popup2 {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+#gallery-popup2.active {
+    display: flex;
+}
+
+#gallery-grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    max-width: 700px;
+    position: relative;
+    cursor: default;
+}
+
+#gallery-grid2 img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: opacity 0.2s;
+}
+
+#gallery-grid2 img:hover {
+    opacity: 0.8;
+}
+
+#gallery-close2 {
+    grid-column: 1 / -1;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#simpsonshome2 img {
+    border: 2px solid black;
+    
+}
+
+#simpsonshome2 {
+    padding: 10px;
+}
+
+
+/* 3 */
+
+#gallery-popup3 {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+#gallery-popup3.active {
+    display: flex;
+}
+
+#gallery-grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    max-width: 700px;
+    position: relative;
+    cursor: default;
+}
+
+#gallery-grid3 img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: opacity 0.2s;
+}
+
+#gallery-grid3 img:hover {
+    opacity: 0.8;
+}
+
+#gallery-close3 {
+    grid-column: 1 / -1;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#simpsonshome3 img {
+    border: 2px solid black;
+    
+}
+
+#simpsonshome3 {
+    padding: 10px;
 }
