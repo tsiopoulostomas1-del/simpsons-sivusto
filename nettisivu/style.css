@@ -343,3 +343,20 @@ body {
   border: 1px solid #ccc;
   border-top: none;
 }
+
+.iso-kuva {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background-color: rgba(0, 0, 0, 0.9); /* Tumma tausta */
+  z-index: 9999; /* Nostaa kaiken muun päälle */
+  cursor: zoom-out;
+}
+
+
+#paris img {
+    padding: 10px;
+}

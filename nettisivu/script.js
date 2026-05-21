@@ -53,3 +53,17 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+
+
+const gifKuvat = document.querySelectorAll('#Paris img');
+
+
+gifKuvat.forEach(function(kuva) {
+  
+  
+  kuva.addEventListener('click', function() {
+    kuva.classList.toggle('iso-kuva');
+  });
+  
+});
