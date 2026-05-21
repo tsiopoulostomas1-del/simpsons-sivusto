@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Springfield</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="forum.js" defer></script>
+</head>
+<body>
+
+    <aside id="etusivuheader">
+        <img id="logo" src="images/thesimpsons.png" alt="The Simpsons">
+        <h1>The Simpsons Page</h1>
+    </aside>
+
+    <nav style="font-family: Calibri;" id="etunav">
+        <a href="hahmosivu.html"><strong>Hahmosivu</strong></a>
+        <a style="color:white; padding:22px;" id="springfield" href="keskustelupalsta.html"><strong>Keskustelupalsta</strong></a>
+        <a href="springfield.html"><strong>Springfield</strong></a>
+        <a href="etusivu.html"><strong>Takaisin pääsivulle</strong></a>
+    </nav>
+
+    <main>
+        <div>
+            <button id="avaanappi">Lähetä viesti</button>
+        </div>
+
+        <article id="viestit">
+            <div id="paivamaara1"></div>
+            <div id="sisaltoforum1"></div>
+            <div id="paivamaara2"></div>
+            <div id="sisaltoforum2"></div>
+            <div id="paivamaara3"></div>
+            <div id="sisaltoforum3"></div>
+            <div id="paivamaara4"></div>
+            <div id="sisaltoforum4"></div>
+            <div id="paivamaara5"></div>
+            <div id="sisaltoforum5"></div>
+            <div id="paivamaara6"></div>
+            <div id="sisaltoforum6"></div>
+            <div id="paivamaara7"></div>
+            <div id="sisaltoforum7"></div>
+        </article>
+    </main>
+
+    <div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999;">
+        <div style="background:white; width:400px; margin:100px auto; padding:30px; border-radius:8px;">
+            <h2>Lähetä viesti</h2>
+            <label>Nimi</label><br>
+            <input type="text" id="input-nimi" placeholder="Nimesi" style="width:100%; padding:8px; margin-bottom:10px; box-sizing:border-box;"><br>
+            <label>Otsikko</label><br>
+            <input type="text" id="input-otsikko" placeholder="Viestin otsikko" style="width:100%; padding:8px; margin-bottom:10px; box-sizing:border-box;"><br>
+            <label>Viesti</label><br>
+            <textarea id="input-viesti" placeholder="Kirjoita viestisi..." style="width:100%; padding:8px; height:120px; margin-bottom:10px; box-sizing:border-box;"></textarea><br>
+            <button id="lahetanappi">Lähetä</button>
+            <button id="suljenappi">Sulje</button>
+        </div>
+    </div>
+
+</body>
+</html>

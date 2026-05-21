@@ -360,3 +360,204 @@ body {
 #paris img {
     padding: 10px;
 }
+
+#foorumilähetä {
+    padding: 15px;
+    font-family: calibri;
+    background-color: #007bff; 
+    color: #ffffff;            
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;       
+    cursor: pointer;   
+    width: 200px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#keskustelupalsta {
+    padding: 5px;
+    
+    
+    position: relative;
+    flex-direction: column;
+    
+    left: 20px;
+    width: 1000px;
+    height: 400px;
+
+}
+
+#keskustelupalsta article {
+    height: 600px;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+[id^="paivamaara"] {
+    display: flex;
+    gap: 16px;
+    font-size: 0.85em;
+    color: #666;
+    background-color: #f4c430;
+    padding: 8px 16px;
+    border-radius: 6px 6px 0 0;
+    margin: 0;
+}
+
+[id^="sisaltoforum"] {
+    background-color: #ffffff;
+    border: 1px solid #f4c430;
+    border-top: none;
+    padding: 10px 16px;
+    border-radius: 0 0 6px 6px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.forum-title {
+    margin: 0 0 8px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.forum-body {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#modal-sisalto {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    max-width: 90%;
+}
+
+#modal-sisalto h2 {
+    margin: 0;
+}
+
+#modal-sisalto input,
+#modal-sisalto textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+#modal-sisalto textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#modal-napit {
+    display: flex;
+    gap: 10px;
+}
+
+#modal-napit button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#lahetaviesti {
+    background-color: #f4c430;
+    font-weight: bold;
+}
+
+#sulje {
+    background-color: #ddd;
+}
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 30px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,0.5);
+}
+
+dialog h2 {
+    margin: 0 0 16px 0;
+}
+
+dialog label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+dialog input,
+dialog textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+dialog textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#modal-napit {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+#modal-napit button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#lahetaviesti {
+    background-color: #f4c430;
+    font-weight: bold;
+}
+
+#sulje {
+    background-color: #ddd;
+}
