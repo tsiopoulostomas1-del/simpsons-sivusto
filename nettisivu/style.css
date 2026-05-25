@@ -56,12 +56,16 @@ body {
 
 #perustiedot {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
-    padding: 10px;
+    padding: 30px;
     border-bottom: 2px solid black;
-    width: 1450px;
+    width: 100%;
+    max-width: 1200px;
     font-size: 18px;
+    margin-right: 165px;
+    box-sizing: border-box;
+
 }
 
 #perustiedot p {
@@ -74,13 +78,11 @@ body {
     width: 300px;
     height: fit-content;
     float: right;
-    position: relative;
-    bottom: 150px;
+    margin: 0 10px 10px 20px;
     height: 325px;
-    bottom: 150px;
-    right: 10px;
     background-color: #5C9ED9;
     font-family: calibri;
+    margin-top: 20px;
     
 }
 
